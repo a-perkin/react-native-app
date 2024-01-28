@@ -1,6 +1,7 @@
 import { View, Text, SafeAreaView } from "react-native";
 import CardListView from "../components/CardsList";
 import { styles } from "../constants/styles";
+import PromoBlock from "../components/PromoBlock";
 
 const MainScreen = ({ navigation }) => {
   return (
@@ -10,11 +11,7 @@ const MainScreen = ({ navigation }) => {
           <CardListView navigation = {navigation}/>
         </View>
         <View style={styles.mainScreenStatisticContainer}>
-          <View style={styles.mainScreenStatistic}>
-            <Text style={styles.balance}>
-              Some component will be here later ...
-            </Text>
-          </View>
+          <PromoBlock navigation = {navigation}/>
         </View>
       </View>
     </SafeAreaView>
