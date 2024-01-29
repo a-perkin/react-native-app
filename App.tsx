@@ -1,4 +1,3 @@
-import { SafeAreaView, StatusBar, View } from "react-native";
 import CardDetailScreen from "./screens/CardDetailsScreen";
 import MainScreen from "./screens/MainScreen";
 import { NavigationContainer } from "@react-navigation/native";

@@ -275,4 +275,15 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     marginHorizontal: 8,
   },
+  promoContainer: {
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    width: 308,
+    height: 328,
+    margin: 20,
+  },
+  promoImage: {
+    borderRadius: 20,
+  },
 });
