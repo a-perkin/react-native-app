@@ -9,7 +9,7 @@ const Separator = () => {
   return <View style={styles.statementSeparator}></View>;
 };
 
-const Statement = ({ card }) => {
+const Statement = ({ card, navigation }) => {
   const cardKey = card.key;
   const data = STATEMENT;
   let filteredStatement = data.filter((item) => item.cardKey === cardKey);
@@ -48,7 +48,9 @@ const Statement = ({ card }) => {
         />
         <FlatList
           data={filteredStatement}
-          renderItem={StatementItem}
+          renderItem={({ item }) => (
+              <StatementItem item={item} card={card} navigation={navigation}/>
+          )}
           keyExtractor={(item) => item.key.toString()}
           ItemSeparatorComponent={Separator}
           showsVerticalScrollIndicator={false}

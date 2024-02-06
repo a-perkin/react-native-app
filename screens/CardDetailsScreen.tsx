@@ -8,12 +8,11 @@ const CardDetailScreen = ({ route, navigation }) => {
 
   return (
     <SafeAreaView style={styles.mainContainer}>
-      {/* <NavigationBar navigation={navigation} /> */}
       <View style={styles.CardViewContainer}>
         <View style={styles.cardContainer}>
           <Card item={card} navigation={navigation}></Card>
         </View>
-        <Statement card={card}></Statement>
+        <Statement card={card} navigation={navigation}></Statement>
       </View>
     </SafeAreaView>
   );

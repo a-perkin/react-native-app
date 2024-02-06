@@ -286,4 +286,52 @@ export const styles = StyleSheet.create({
   promoImage: {
     borderRadius: 20,
   },
+  containerStatementDetail: {
+    padding: 16,
+    backgroundColor: COLORS.lightBackground,
+    flex: 1,
+    flexDirection: "column",
+  },
+  statementInfoContainer: {
+    flex: 0.5,
+    alignItems: "center",
+  },
+  statementNav: {
+    flex: 0.5,
+  },
+  statementInfo: {
+    marginTop: 40,
+    padding: 20,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: COLORS.borderColor,
+    backgroundColor: "rgba(13, 166, 255, 0.2)",
+    width: 340,
+    alignItems: "center",
+  },
+  statementDetailsIconContainer: {},
+  statementDetailsIcon: {
+    width: 70,
+    height: 70,
+  },
+  statementDetailsDate: {
+    color: COLORS.mainText,
+    fontSize: 15,
+    padding: 10,
+  },
+  statementDetailsDesc: {
+    color: COLORS.mainText,
+    fontSize: 15,
+  },
+  statementDetailsAmount: {
+    color: COLORS.mainText,
+    fontWeight: "bold",
+    fontSize: 32,
+    marginTop: 20,
+    padding: 10,
+  },
+  statementDetailsTitle: {
+    color: COLORS.mainText,
+    fontSize: 15,
+  },
 });
