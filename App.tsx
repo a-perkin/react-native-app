@@ -17,6 +17,7 @@ export default function App() {
             backgroundColor: COLORS.mainBackground,
           },
           headerTintColor: COLORS.mainText,
+          headerShadowVisible: false
         }}
       >
         <Stack.Screen name="Main" component={MainScreen} />
